@@ -1,0 +1,61 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>Página Principal de Mi Página web</title>
+    <meta charset="UTF-8">
+    <meta name="koalas, animales, animales graciosos, videojuegos, página principal, formulario, contraseña, nombre, sexo" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Santiago Rodríguez Pozo">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p {
+          color: navy;
+          text-indent: 30px;
+          text-transform: uppercase;
+        }
+        </style>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Aref Ruqaa';font-size: 13px;
+              background-color: rgb(0, 255, 255);
+          }
+      </style>
+    <h1>Bienvenido al registro de Mi pagina web</h1>
+    <fieldset>
+        <h1>Introduzca sus parametros</h1>
+      <p style="color:rgb(0, 0, 0);"> <label>Nombre <input type="text" id="fname" name="fname"><br></label>
+       <label for="lname">Apellidos </label>
+       <input type="text" id="lname" name="lname" placeholder="Introduzca apellido"><br><br>
+       <label for="pwd">Introduzca su contraseña:</label>
+       <input type="password" id="pwd" name="pwd"placeholder="Introduzca la contraseña"><br><br>
+       <label for="lname">Fecha de nacimiento</label>
+       <input type="text" id="lname" name="lname" placeholder="Introduzca la fecha"><br><br>
+       <label for="lname">Provincia </label>
+       <input type="text" id="lname" name="lname" placeholder="Introduzca su Provincia"><br><br>
+      <h3><p style="color:rgb(0, 255, 55);"><p>Por favor introduzca su sexo:</p>
+       <input type="radio" id="male" name="genero" value="Hombre">
+       <label for="male">Hombre</label><br>
+       <input type="radio" id="female" name="genero" value="Mujer">
+       <label for="female">Mujer</label><br>
+       <input type="radio" id="other" name="genero" value="Dinosaurio">
+       <label for="other">Dinosaurio</label>
+   <p> 
+    <h3>¿Cuales son sus categorias favoritas? Puede seleccionar mas de 1 si usted lo desea.<br>
+<label><input type="checkbox" name="Accion"> Acción</label>
+<label><input type="checkbox" name="Simulacion">Simulación</label>
+<label><input type="checkbox" name="Deportes">Deportes</label>
+<label><input type="checkbox" name="Shooters">Shooters</label>
+<label><input type="checkbox" name="Estrategia">Estrategia</label>
+<label><input type="checkbox" name="Lucha">Lucha</label>
+<label><input type="checkbox" name="Juegos musicales">Juegos musicales</label>
+</p>
+</fieldset>
+<br><input type="Submit" value="Submit"><br>
+            <input type="reset" value="Borrar" onclick="alert('Cuidado, podrias borrar todos tus datos')">
+        </form>
+
+</body>
+
+</html>
