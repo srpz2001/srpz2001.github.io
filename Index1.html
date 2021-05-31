@@ -1,63 +1,134 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Página Principal de Mi Página web</title>
+    <title>Formulario de registro a la pagina web</title>
     <meta charset="UTF-8">
-    <meta name="koalas, animales, animales graciosos, videojuegos, página principal, formulario, contraseña, nombre, sexo" content="HTML, CSS, JavaScript">
+    <meta name="sexo, nombre, formulario, registro, dinosaurio, hombre, mujer, apellido, contraseña, seguridad, email" content="HTML, CSS, JavaScript">
     <meta name="author" content="Santiago Rodríguez Pozo">
     <meta http-equiv="refresh" content="30">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        p {
-          color: navy;
-          text-indent: 30px;
-          text-transform: uppercase;
-        }
-        </style>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Añadimos el padding al contenedor  */
+.container {
+  padding: 16px;
+  background-color: rgb(21, 129, 75);
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: rgba(255, 255, 255, 0.788);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid rgba(64, 187, 7, 0.788);
+  margin-bottom: 25px;
+}
+
+/* Elegimos un  estilo para el boton de registrar */
+.registerbtn {
+  background-color: rgba(38, 204, 38, 0.788);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* */
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Le pones un color azul a los links */
+a {
+  color: rgb(16, 35, 207);
+}
+
+/* Establece un color de fondo gris y centra el texto de la sección "Iniciar sesión". */
+.signin {
+  background-color: rgba(170, 170, 170, 0.788);
+  text-align: center;
+}
+/* Al minimizar la pantalla cambia el fondo a amarillo to guaperrimo y le ponemos una fuente de letra y*/
+            body {
+        font-family: 'Aref Ruqaa';font-size: 14px;
+              background-color: rgb(56, 61, 73);
+            }
+            @media only screen and (max-width: 600px) {
+              body {
+                background-color: rgb(217, 255, 5);
+              }
+            }
+
+</style>
 </head>
 <body>
-    <style>
-        body {
-            font-family: 'Aref Ruqaa';font-size: 13px;
-              background-color: rgb(23, 151, 76);
-          }
-      </style>
-    <h1>Bienvenido al registro de Mi pagina web</h1>
-    <fieldset>
-        <h1>Introduzca sus parametros</h1>
-      <p style="color:rgb(0, 0, 0);"> <label>Nombre <input type="text" id="fname" name="fname"><br></label>
-       <label for="lname">Apellidos </label>
-       <input type="text" id="lname" name="lname" placeholder="Introduzca apellido"><br><br>
-       <label for="pwd">Introduzca su contraseña:</label>
-       <input type="password" id="pwd" name="pwd"placeholder="Introduzca la contraseña"><br><br>
-       <label for="lname">Fecha de nacimiento</label>
-       <input type="text" id="lname" name="lname" placeholder="Introduzca la fecha"><br><br>
-       <label for="lname">Provincia </label>
-       <input type="text" id="lname" name="lname" placeholder="Introduzca su Provincia"><br><br>
-      <h3><p style="color:rgb(0, 255, 55);"><p>Por favor introduzca su sexo:</p>
-       <input type="radio" id="male" name="genero" value="Hombre">
-       <label for="male">Hombre</label><br>
-       <input type="radio" id="female" name="genero" value="Mujer">
-       <label for="female">Mujer</label><br>
-       <input type="radio" id="other" name="genero" value="Dinosaurio">
-       <label for="other">Dinosaurio</label>
-   <p> 
-    <h3>¿Cuales son sus categorias de videojuegos favoritas? Puede seleccionar mas de 1 si usted lo desea.<br>
-<label><input type="checkbox" name="Accion"> Acción</label>
-<label><input type="checkbox" name="Simulacion">Simulación</label>
-<label><input type="checkbox" name="Deportes">Deportes</label>
-<label><input type="checkbox" name="Shooters">Shooters</label>
-<label><input type="checkbox" name="Estrategia">Estrategia</label>
-<label><input type="checkbox" name="Lucha">Lucha</label>
-<label><input type="checkbox" name="Juegos musicales">Juegos musicales</label>
-</p>
-</fieldset>
-<br>  
-<input type="submit" value="Submit"><br>
-<input type="reset" value="Borrar todo" onclick="alert('Cuidado, si presiona este botón borrara todo!!')">
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Formulario de Registro</h1>
+    <p>Por favor rellene las casillas para registrarse</p>
+    <hr>
+    <label for="lname">Nombre</label> 
+    <input type="text" id="fname" name="fname" placeholder="Introduzca su nombre"></label>
+
+    <label for="lname">Apellidos </label>
+    <input type="text" id="lname" name="lname" placeholder="Introduzca su apellido"><br><br>
+
+    <label for="lname">Fecha de nacimiento</label>
+    <input type="text" id="lname" name="lname" placeholder="Introduzca su fecha de nacimiento"><br><br>
+
+    <label for="lname">Provincia </label>
+    <input type="text" id="lname" name="lname" placeholder="Introduzca su Provincia"><br><br>
+    
+   <h3><p style="color:rgb(0, 255, 55);"><p>Por favor introduzca su sexo:</p>
+    <input type="radio" id="male" name="genero" value="Hombre">
+    <label for="male">Hombre</label><br>
+    <input type="radio" id="female" name="genero" value="Mujer">
+    <label for="female">Mujer</label><br>
+    <input type="radio" id="other" name="genero" value="Dinosaurio">
+    <label for="other">Dinosaurio</label><br> 
+    <br> 
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Introduzca su email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Introduzca su contrasena" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repita su password</b></label>
+    <input type="password" placeholder="Vuelva a escribir su password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>Al crear una cuenta usted acepta los <a href="#">Terminos y privacidad</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>¿Usted tiene ya una cuenta creada? <a href="#">Sign in</a>.</p>
+  </div>
 </form>
- <script type="text/javascript"></script>
-</h3>
 
 </body>
 </html>
