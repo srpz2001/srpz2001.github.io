@@ -55,7 +55,6 @@ hr {
   opacity: 0.9;
 }
 
-/* */
 .registerbtn:hover {
   opacity: 1;
 }
@@ -94,10 +93,18 @@ a {
     <input type="text" id="fname" name="fname" placeholder="Introduzca su nombre"></label>
 
     <label for="lname">Apellidos </label>
-    <input type="text" id="lname" name="lname" placeholder="Introduzca su apellido"><br><br>
+    <input type="text" id="sname" name="sname" placeholder="Introduzca su apellido"><br><br>
 
+    <label fro="lname">Fecha actual</label>
+    <input type="date" id="date" name="date" placeholder="Introduzca la fecha actual"<br><br>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Haga click en mi para verificar la fecha actual.</button>
+    <p id="demo"></p>
+    <br><br>
     <label for="lname">Fecha de nacimiento</label>
-    <input type="text" id="lname" name="lname" placeholder="Introduzca su fecha de nacimiento"><br><br>
+    <input type="date" id="date" name="date" placeholder="Introduzca su fecha de nacimiento"><br><br>
 
     <label for="lname">Provincia </label>
     <input type="text" id="lname" name="lname" placeholder="Introduzca su Provincia"><br><br>
@@ -109,13 +116,13 @@ a {
     <label for="female">Mujer</label><br>
     <input type="radio" id="other" name="genero" value="Dinosaurio">
     <label for="other">Dinosaurio</label><br> 
-    <br> 
+    <br><br>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Introduzca su email" name="email" id="email" required>
+    <input type="text" placeholder="Introduzca su email" name="email" id="email" required><br><br>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Introduzca su contrasena" name="psw" id="psw" required>
+    <input type="password" placeholder="Introduzca su contrasena" name="psw" id="psw" required><br><br>
 
     <label for="psw-repeat"><b>Repita su password</b></label>
     <input type="password" placeholder="Vuelva a escribir su password" name="psw-repeat" id="psw-repeat" required>
@@ -123,8 +130,10 @@ a {
     <p>Al crear una cuenta usted acepta los <a href="#">Terminos y privacidad</a>.</p>
 
     <button type="submit" class="registerbtn">Register</button>
-  </div>
   
+ 
+  <input type=button value=Atras onclick="history.go(-1)">
+  </div>
   <div class="container signin">
     <p>¿Usted tiene ya una cuenta creada? <a href="#">Sign in</a>.</p>
   </div>
