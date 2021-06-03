@@ -182,7 +182,32 @@
   font-size: 90%;
 }
   </style>
-  
+  <script language="JavaScript">
+    function mueveReloj(){
+        momentoActual = new Date()
+        hora = momentoActual.getHours()
+        minuto = momentoActual.getMinutes()
+        segundo = momentoActual.getSeconds()
+    
+        str_segundo = new String (segundo)
+        if (str_segundo.length == 1)
+           segundo = "0" + segundo
+    
+        str_minuto = new String (minuto)
+        if (str_minuto.length == 1)
+           minuto = "0" + minuto
+    
+        str_hora = new String (hora)
+        if (str_hora.length == 1)
+           hora = "0" + hora
+    
+        horaImprimible = hora + " : " + minuto + " : " + segundo
+    
+        document.form_reloj.reloj.value = horaImprimible
+    
+        setTimeout("mueveReloj()",1000)
+    }
+    </script>
 </head>
 <body>
   <header>
@@ -193,7 +218,7 @@
     <section>
   <div id="header">
     <ul class="nav">
-      <li><a href="file:///C:/Users/Admin/Desktop/Index1.html">Registrarse</a></li>
+      <li><a href="file:///C:/Users/Admin/Desktop/Index1.html">Formulario</a></li>
       <li><a href="">Categorias</a>
         <ul>
           <li><a href="https://vandal.elespanol.com/rankings/videojuegos/simulacion">Simulación</a></li>
@@ -237,6 +262,12 @@
  <div class="item1"></div>
 <article class="all-browsers">
     <h1>====================================================================================================================================</h1>
+    
+    <body onload="mueveReloj()">
+      <form name="form_reloj">
+      <input type="text" name="reloj" size="10" style="background-color : rgb(35, 37, 34); color : White; font-family : Verdana, Arial, Helvetica; font-size : 8pt; text-align : center;" onfocus="window.document.form_reloj.reloj.blur()">
+      </form>
+
     <h1>Definicion cada categoria de videojuegos</h1>
 
     <article class="browser">
@@ -267,6 +298,7 @@
         <h2>Juegos de mesa</h2>
         <p>Juego de mesa es la clasificación que se da a los juegos que constan de un tablero y fichas de diferentes formas y colores, lo que obliga a que se organice sobre una superficie plana, generalmente una mesa, de ahí su nombre. Según las reglas, que son diferentes para cada juego, pueden participar en ellos una o más personas.<p>
       </article>
+
       <!-- Java script para cuando pasas el raton por encima te salga una alerta-->
       <a href="https://alacenadearagon.es/" 
         onmouseover="javascript:alert('Puede caer una probado si abre esto');return false">Jamones to guaperrimos</a>
@@ -286,8 +318,9 @@
        </aside>
       </div>
       <div class="item2">
+        <a href="javascript:void(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location)));">Compartir pagina en Facebook</a>
       </article>
-      <!-- Creamos un footer para poner nuestra marca-->
+      <!-- Creamos un footer para poner nuestra marca personal to refacherita-->
       <footer>
         <p>Autor: Santiago Rodriguez Pozo<br>
       </footer>
