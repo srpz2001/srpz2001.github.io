@@ -1,0 +1,205 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>Mi página web</title>
+    <meta charset="UTF-8">
+    <meta name="Videojuegos, consolas, videojuegos populares, sony, nintendo, microsoft" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Santiago Rodríguez Pozo">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .item1 { grid-area: logo; }
+        .item2 { grid-area: header; }
+        .item3 { grid-area: menu; }
+        .item4 { grid-area: main; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'logo header header header header header'
+            'menu main main main main main';
+          grid-gap: 0px;
+          background-color: #2196F3;
+          padding: 0px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 16px;
+        }
+        </style>
+        <style type="text/css">
+          .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+           margin: 5px 2px;
+          }
+
+          .fa-youtube {
+          background: #bb0000;
+          color: white;
+          }
+          </style>
+
+        <style>
+          body {
+            font-family: Arial;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          form.example input[type=text] {
+            padding: 8px;
+            font-size: 8px;
+            border: 1px solid grey;
+            float: left;
+            width: 60%;
+            background: #f1f1f1;
+          }
+          
+          form.example button {
+            float: left;
+            width: 20%;
+            padding: 5px;
+            background: #ffffff;
+            color: rgb(134, 126, 126);
+            font-size: 10px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+          }
+          
+          form.example button:hover {
+            background: #0b7dda;
+          }
+          
+          form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          </style>
+
+          <style>
+            body {
+        font-family: 'Aref Ruqaa';font-size: 13px;
+              background-color: rgb(56, 61, 73);
+            }
+            @media only screen and (max-width: 600px) {
+              body {
+                background-color: rgb(255, 5, 5);
+              }
+            }
+            </style>
+
+        <style>
+            .vertical-menu {
+              width: 200px;
+            }
+            
+            .vertical-menu a {
+              background-color: #eee;
+              color: rgba(63, 57, 57, 0.986);
+              display: block;
+              padding: 8px;
+              text-decoration: none;
+            }
+            
+            .vertical-menu a:hover {
+              background-color: #ccc;
+            }
+            
+            .vertical-menu a.active {
+              background-color: #ca0707;
+              color: white;
+            }
+            </style>
+
+            <style>
+                div.gallery {
+                  margin: 5px;
+                  border: 1px solid #ccc;
+                  float: left;
+                  width: 180px;
+                }
+                
+                div.gallery:hover {
+                  border: 1px solid #777;
+                }
+                
+                div.gallery img {
+                  width: 100%;
+                  height: auto;
+                }
+                
+                div.desc {
+                  padding: 15px;
+                  text-align: center;
+                }
+                </style>
+
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1"><a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+              </div>
+
+              <div class="item2">
+              <form class="example" action="/action_page.php" style="margin:auto;max-width:300px"></form>
+              <input type="text" placeholder="Search.." name="search2">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+
+            <div class="item3">
+                <div class="vertical-menu">
+                    <a href="#" class="active">Inicio</a>
+                    <a href="https://www.youtube.com/feed/explore">Explorar</a>
+                    <a href="https://www.youtube.com/feed/subscriptions">Suscripciones</a>
+                    <a href="https://www.youtube.com/feed/library">Biblioteca</a>
+                    <a href="https://www.youtube.com/feed/history">Historial</a>
+                    <a href="https://www.youtube.com/playlist?list=WL">Ver mas tarde</a>
+                    <a href="https://www.youtube.com/playlist?list=LL">Videos que mas me gustan</a>
+                  </div>
+            </div>
+
+            <div class="item4"><div class="gallery">
+                <a target="_blank" href="Asopotamadre.jpg">
+                  <img src="Asopotamadre.jpg" alt="Video de youtube" width="600" height="400">
+                </a>
+                <div class="desc">Compro una moto y pasa esto, no te lo vas a creer :O</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="Asopotamadre.jpg">
+                  <img src="Asopotamadre.jpg" alt="Video de youtube" width="600" height="400">
+                </a>
+                <div class="desc">Dios me viene a ver y pasa esto, final inesperado :O</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="Asopotamadre.jpg">
+                  <img src="Asopotamadre.jpg" alt="Video de youtube" width="600" height="400">
+                </a>
+                <div class="desc">Compro una burra y...no te lo vas a creer :O</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="Asopotamadre.jpg">
+                  <img src="Asopotamadre.jpg" alt="Video de youtube" width="600" height="400">
+                </a>
+                <div class="desc">Me he levantado y...no vas a creerte lo que me pasa :O</div>
+              </div></div>  
+            
+          </div>
+          
+    </body> 
+    </html>
